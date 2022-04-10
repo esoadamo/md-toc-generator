@@ -191,7 +191,8 @@ def generate_file_toc(file: Path, toc_chapter_name: Optional[str] = None) -> Non
 def main() -> int:
     try:
         file = Path(argv[1])
-    except IndexError:
+        assert file.is_file()
+    except (IndexError, AssertionError):
         print(f"usage: {argv[0]} md_file [TOC chapter name]")
         return 1
 
