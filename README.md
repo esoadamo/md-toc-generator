@@ -1,16 +1,14 @@
 # MD TOC generator
 
 $%TOC_BEGIN$
-
 ## Table of content
-
-- [1 What is this?](#1-what-is-this?)
-  - [1.1 What it does?](#11-what-it-does?)
-  - [1.2 How does it find where to place the TOC?](#12-how-does-it-find-where-to-place-the-toc?)
-  - [1.3 How to update the TOC after first generation?](#13-how-to-update-the-toc-after-first-generation?)
-- [2 How to run?](#2-how-to-run?)
-- [3 License?](#3-license?)
-  $%TOC_END$
+- [1 What is this?](#1-what-is-this)
+  - [1.1 What it does?](#11-what-it-does)
+  - [1.2 How does it find where to place the TOC?](#12-how-does-it-find-where-to-place-the-toc)
+  - [1.3 How to update the TOC after first generation?](#13-how-to-update-the-toc-after-first-generation)
+- [2 How to run?](#2-how-to-run)
+- [3 License?](#3-license)
+$%TOC_END$
 
 ## 1 What is this?
 

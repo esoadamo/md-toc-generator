@@ -145,14 +145,7 @@ def chapter_name_to_md_item(chapter_name: str) -> str:
     :return: name of the chapter as correctly padded list item
     """
     chapter_level = next(RE_NUMBERED_HEADER_NAME.finditer(chapter_name)).group(1).count('.')
-    chapter_link = chapter_name\
-        .replace('.', '')\
-        .replace('/', '') \
-        .replace('#', '') \
-        .replace('-', '') \
-        .replace('&', '') \
-        .replace(' ', '-')\
-        .lower()
+    chapter_link = re.sub('[/#-&.?]', '', chapter_name).replace(' ', '-').lower()
     return f"{'  ' * chapter_level}- [{chapter_name}](#{chapter_link})"
 
 
